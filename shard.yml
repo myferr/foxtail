@@ -1,0 +1,13 @@
+name: foxtail
+version: 0.1.0
+
+authors:
+  - foxtail contributors
+
+crystal: 1.13.0
+
+license: MIT
+
+targets:
+  foxtail:
+    main: src/logtail.cr
