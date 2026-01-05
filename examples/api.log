@@ -1,0 +1,22 @@
+2026-01-05 10:00:00 INFO Starting API server
+2026-01-05 10:00:01 INFO Server listening on port 8080
+2026-01-05 10:00:05 INFO Connection accepted from 192.168.1.100
+2026-01-05 10:00:06 INFO GET /api/users - 200 OK (12ms)
+2026-01-05 10:00:10 INFO GET /api/products - 200 OK (8ms)
+2026-01-05 10:00:15 WARN Rate limit exceeded for 192.168.1.100
+2026-01-05 10:00:20 ERROR Database connection failed
+2026-01-05 10:00:25 INFO Retrying database connection...
+2026-01-05 10:00:30 INFO Database connection established
+2026-01-05 10:00:35 INFO GET /api/orders - 200 OK (15ms)
+2026-01-05 10:00:40 INFO POST /api/orders - 201 Created (23ms)
+2026-01-05 10:00:45 INFO Connection closed
+2026-01-05 10:00:50 INFO Health check passed
+2026-01-05 10:00:55 INFO Cache cleared
+2026-01-05 10:00:00 INFO Worker process started
+2026-01-05 10:01:05 INFO Processing batch job #1234
+2026-01-05 10:01:10 INFO Batch job #1234 completed
+2026-01-05 10:01:15 ERROR Invalid API key used
+2026-01-05 10:01:20 WARN Deprecated endpoint accessed: /api/v1/users
+2026-01-05 10:01:25 INFO Server shutting down gracefully
+2026-01-05 10:01:30 INFO All connections closed
+2026-01-05 10:01:35 INFO Server stopped
