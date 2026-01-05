@@ -1,0 +1,27 @@
+2026-01-05 10:00:00 INFO Initializing database connection pool
+2026-01-05 10:00:01 INFO Connection pool ready (5 connections)
+2026-01-05 10:00:05 DEBUG Query: SELECT * FROM users WHERE id = 1
+2026-01-05 10:00:06 INFO Query executed in 2ms
+2026-01-05 10:00:10 DEBUG Query: SELECT * FROM products
+2026-01-05 10:00:10 INFO Query executed in 5ms
+2026-01-05 10:00:15 WARN Slow query detected (120ms): SELECT * FROM orders WHERE created_at > NOW() - INTERVAL '30 days'
+2026-01-05 10:00:20 ERROR Connection lost: connection timeout
+2026-01-05 10:00:21 INFO Reconnecting to database...
+2026-01-05 10:00:25 INFO Database connection restored
+2026-01-05 10:00:30 DEBUG Query: INSERT INTO orders (user_id, total) VALUES (1, 99.99)
+2026-01-05 10:00:30 INFO Query executed in 3ms
+2026-01-05 10:00:35 DEBUG Query: COMMIT
+2026-01-05 10:00:35 INFO Transaction completed
+2026-01-05 10:00:40 INFO Connection pool statistics: 2 active, 3 idle
+2026-01-05 10:00:45 DEBUG Query: SELECT pg_stat_activity COUNT(*) FROM pg_stat_activity
+2026-01-05 10:00:45 INFO Query executed in 1ms
+2026-01-05 10:00:50 INFO Performing vacuum analyze
+2026-01-05 10:00:55 INFO Vacuum completed
+2026-01-05 10:01:00 WARN Connection pool exhaustion warning: 4/5 connections in use
+2026-01-05 10:01:05 DEBUG Query: SELECT * FROM audit_logs WHERE created_at > NOW() - INTERVAL '1 hour'
+2026-01-05 10:01:10 INFO Query executed in 150ms
+2026-01-05 10:01:15 ERROR Deadlock detected in transaction
+2026-01-05 10:01:16 INFO Retrying transaction after deadlock
+2026-01-05 10:01:20 INFO Transaction completed successfully
+2026-01-05 10:01:25 INFO Closing database connections
+2026-01-05 10:01:30 INFO Connection pool closed
