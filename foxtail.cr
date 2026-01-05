@@ -3,11 +3,11 @@ require "file_utils"
 require "crypto/subtle"
 require "io"
 
-require "./colors"
-require "./config"
-require "./file_watcher"
-require "./app"
-require "./utils"
+require "./src/colors"
+require "./src/config"
+require "./src/file_watcher"
+require "./src/app"
+require "./src/utils"
 
 def main
   config = Foxtail::Config.new

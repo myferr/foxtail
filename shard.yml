@@ -10,4 +10,4 @@ license: MIT
 
 targets:
   foxtail:
-    main: src/logtail.cr
+    main: ./foxtail.cr
