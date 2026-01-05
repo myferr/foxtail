@@ -1,0 +1,26 @@
+{"level":"info","msg":"Application started","pid":1234,"version":"1.2.3"}
+{"level":"debug","msg":"Loading configuration","file":"config.yml"}
+{"level":"info","msg":"HTTP server listening","port":8080,"host":"0.0.0.0"}
+{"level":"info","msg":"Request received","method":"GET","path":"/api/users","requestId":"abc123","duration":"5ms"}
+{"level":"info","msg":"Request received","method":"GET","path":"/api/products","requestId":"def456","duration":"8ms"}
+{"level":"warn","msg":"Slow response detected","path":"/api/reports","requestId":"ghi789","duration":"250ms"}
+{"level":"error","msg":"Failed to connect to database","host":"localhost","port":5432,"error":"connection refused","requestId":"jkl012"}
+{"level":"info","msg":"Retrying database connection","attempt":1,"maxAttempts":3}
+{"level":"info","msg":"Database connection established","poolSize":5}
+{"level":"info","msg":"Request received","method":"POST","path":"/api/orders","requestId":"mno345","duration":"15ms","statusCode":201}
+{"level":"info","msg":"Background job started","job":"process_payments","jobId":"pqr678"}
+{"level":"debug","msg":"Processing payment","orderId":12345,"amount":99.99,"currency":"USD"}
+{"level":"info","msg":"Payment processed","orderId":12345,"status":"success","jobId":"pqr678"}
+{"level":"warn","msg":"Cache miss","key":"user:12345","ttl":"300s"}
+{"level":"info","msg":"Request received","method":"GET","path":"/api/profile","requestId":"stu901","duration":"3ms"}
+{"level":"error","msg":"Authentication failed","userId":null,"reason":"Invalid token","requestId":"vwx234"}
+{"level":"info","msg":"Health check passed","status":"healthy","uptime":"3600s"}
+{"level":"debug","msg":"Garbage collection triggered","heapSize":"256MB","heapUsed":"180MB"}
+{"level":"info","msg":"Session created","userId":12345,"sessionId":"yzs567","expires":"2026-01-06T10:00:00Z"}
+{"level":"warn","msg":"Deprecated API usage","endpoint":"/api/v1/users","requestId":"tuv890","deprecationDate":"2025-12-01"}
+{"level":"info","msg":"Request received","method":"DELETE","path":"/api/orders/12345","requestId":"wxy123","duration":"12ms"}
+{"level":"info","msg":"Order deleted","orderId":12345,"deletedBy":12345}
+{"level":"info","msg":"Application shutting down","reason":"SIGTERM","uptime":"7200s"}
+{"level":"info","msg":"Flushing caches","items":1500}
+{"level":"info","msg":"Closing connections","http":50,"database":5,"redis":2}
+{"level":"info","msg":"Shutdown complete","graceful":true}
