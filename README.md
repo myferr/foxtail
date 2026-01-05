@@ -19,14 +19,14 @@ A fast, cross-platform replacement for Tail that can follow **multiple log files
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/myferr/foxtail
 cd foxtail
 
 # Install Crystal (if not already installed)
 # Visit: https://crystal-lang.org/install/
 
 # Build the binary
-crystal build src/foxtail.cr -o bin/foxtail
+shards build
 
 # (Optional) Install system-wide
 sudo cp bin/foxtail /usr/local/bin/
