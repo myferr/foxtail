@@ -40,12 +40,12 @@ jobs:
 
       - name: Build
         run: |
-          crystal build --release -o bin/binary-linux-x86_64 cli.cr
+          crystal build --release -o bin/foxtail-linux-x86_64 cli.cr
 
       - uses: actions/upload-artifact@v4
         with:
-          name: binary-linux-x86_64
-          path: bin/binary-linux-x86_64
+          name: foxtail-linux-x86_64
+          path: bin/foxtail-linux-x86_64
 
   build-macos-x86_64:
     name: Build macOS x86_64 (Crystal)
@@ -68,12 +68,12 @@ jobs:
 
       - name: Build
         run: |
-          crystal build --release -o bin/binary-macos-x86_64 cli.cr
+          crystal build --release -o bin/foxtail-macos-x86_64 cli.cr
 
       - uses: actions/upload-artifact@v4
         with:
-          name: binary-macos-x86_64
-          path: bin/binary-macos-x86_64
+          name: foxtail-macos-x86_64
+          path: bin/foxtail-macos-x86_64
 
   build-macos-aarch64:
     name: Build macOS arm64 (Crystal)
@@ -96,12 +96,12 @@ jobs:
 
       - name: Build
         run: |
-          crystal build --release -o bin/binary-macos-aarch64 cli.cr
+          crystal build --release -o bin/foxtail-macos-aarch64 cli.cr
 
       - uses: actions/upload-artifact@v4
         with:
-          name: binary-macos-aarch64
-          path: bin/binary-macos-aarch64
+          name: foxtail-macos-aarch64
+          path: bin/foxtail-macos-aarch64
 
   release:
     name: Publish GitHub Release
@@ -122,6 +122,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            release/**/binary-linux-x86_64
-            release/**/binary-macos-x86_64
-            release/**/binary-macos-aarch64
+            release/**/foxtail-linux-x86_64
+            release/**/foxtail-macos-x86_64
+            release/**/foxtail-macos-aarch64
